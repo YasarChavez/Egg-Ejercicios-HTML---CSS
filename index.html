@@ -22,7 +22,10 @@
     <div id="sonido" style="text-align: center" class="my-4">
       <section>
         <h4>Para mi página estilo antiguo, un sonido antiguo.</h4>
-        <audio src="https://www.winhistory.de/more/winstart/mp3/winxp.mp3" controls></audio>
+        <audio
+          src="https://www.winhistory.de/more/winstart/mp3/winxp.mp3"
+          controls
+        ></audio>
       </section>
     </div>
 
@@ -30,7 +33,7 @@
       <div class="row my-4">
         <div class="col-sm-12 col-md-6 col-lg-6">
           <h1 align="center">Encabezado H1</h1>
-          <p align="rightleft" style="font-weight: bold">
+          <p align="left" style="font-weight: bold">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             aliquid neque illo assumenda atque fugit id, maiores maxime
             recusandae dicta vitae exercitationem, nostrum saepe laboriosam quod
@@ -40,7 +43,7 @@
 
         <div class="col-sm-12 col-md-6 col-lg-6">
           <h2 align="center">Encabezado H2</h2>
-          <p align="rightleft" style="font-style: italic">
+          <p align="left" style="font-style: italic">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt velit
             vero qui distinctio saepe. Modi culpa voluptatibus impedit, dolorum,
             esse commodi itaque excepturi molestiae rerum corporis fugit
@@ -220,7 +223,12 @@
           <form action="" method="post">
             <div style="margin: 5px">
               <label for="user">Nombre de Usuario:</label><br />
-              <input type="text" name="user" placeholder="juanito15" /><br />
+              <input
+                type="text"
+                name="user"
+                placeholder="juanito15"
+                required
+              /><br />
             </div>
             <div style="margin: 5px">
               <label for="password">Contraseña:</label><br />
@@ -228,11 +236,17 @@
                 type="password"
                 name="password"
                 placeholder="*********"
+                required
               /><br />
             </div>
             <div style="margin: 5px">
               <label for="edad">Edad:</label><br />
-              <input type="number" name="edad" placeholder="23" /><br />
+              <input
+                type="number"
+                name="edad"
+                placeholder="23"
+                required
+              /><br />
             </div>
             <div style="margin: 5px">
               <label for="nacimiento">Fecha de nacimiento:</label><br />
@@ -241,20 +255,22 @@
                 name="nacimiento"
                 min="2005-01-01"
                 max="2023-01-01"
+                required
               /><br />
             </div>
             <div style="margin: 5px">
               <label for="genero">Sexo:</label><br />
-              <input type="radio" name="genero" value="masculino" /> Masculino
+              <input type="radio" name="genero" value="masculino" required />
+              Masculino
               <br />
-              <input type="radio" name="genero" value="femenito" /> Femenino
+              <input type="radio" name="genero" value="femenino" /> Femenino
               <br />
               <input type="radio" name="genero" value="notieneidea" /> Otro
               <br />
             </div>
             <div style="margin: 5px">
               <label for="country">País de nacimiento:</label><br />
-              <select name="country">
+              <select name="country" required>
                 <option value="Argentina">Argentina</option>
                 <option value="Armenia">Armenia</option>
                 <option value="Australia">Australia</option>
@@ -484,7 +500,9 @@
       <hr />
       <div class="row my-f">
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <table class="table table-responsive table-condensed table-bordered table-striped table-hover">
+          <table
+            class="table table-responsive table-condensed table-bordered table-striped table-hover"
+          >
             <h3 class="text-center">Tabla 1</h3>
             <thead>
               <tr>
@@ -509,7 +527,9 @@
           </table>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <table class="table table-responsive table-condensed table-bordered table-striped table-hover">
+          <table
+            class="table table-responsive table-condensed table-bordered table-striped table-hover"
+          >
             <h3 class="text-center">Tabla 2</h3>
             <thead>
               <tr>
@@ -522,18 +542,30 @@
               <tr>
                 <td class="text-center">Producto 1</td>
                 <td class="text-center">10000</td>
-                <td class="text-center"><a class="btn btn-primary" href="#" role="button">Ver detalles</a>
+                <td class="text-center">
+                  <a class="btn btn-primary" href="#" role="button"
+                    >Ver detalles</a
+                  >
                 </td>
               </tr>
               <tr>
                 <td class="text-center">Producto 2</td>
                 <td class="text-center">10000</td>
-                <td class="text-center"><a class="btn btn-primary" href="#" role="button">Ver detalles</a>
+                <td class="text-center">
+                  <a class="btn btn-primary" href="#" role="button"
+                    >Ver detalles</a
+                  >
+                </td>
               </tr>
+
               <tr>
                 <td class="text-center">Producto 3</td>
                 <td class="text-center">10000</td>
-                <td class="text-center"><a class="btn btn-primary" href="#" role="button">Ver detalles</a>
+                <td class="text-center">
+                  <a class="btn btn-primary" href="#" role="button"
+                    >Ver detalles</a
+                  >
+                </td>
               </tr>
             </tbody>
           </table>
