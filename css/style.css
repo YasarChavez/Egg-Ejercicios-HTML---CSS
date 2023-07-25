@@ -1,4 +1,4 @@
-body {
+body{
   background: #ece9e6; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -11,6 +11,7 @@ body {
     #ece9e6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .btn-light {
   border: 1px solid gray;
 }
@@ -29,4 +30,12 @@ body {
   zoom: 1.5;
   transform: rotate(360deg);
   transition: all 3s;
+}
+.container{
+  border: 5px outset rgba(0, 0, 0, 0.61); 
+  border-radius: 15px;
+  box-shadow: 0 0 55px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px; 
+  margin-top: 50px; 
+  padding: 30px;
 }

@@ -16,49 +16,90 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div id="sonido" style="text-align: center" class="my-4">
-      <section class="animate__animated animate__backInUp">
-        <h4>Para mi página estilo antiguo, un sonido antiguo.</h4>
-        <audio
-          src="https://www.winhistory.de/more/winstart/mp3/winxp.mp3"
-          controls
-        ></audio>
-      </section>
-    </div>
-
-    <div class="container">
-      <div class="row my-4 animate__animated animate__shakeX">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <h1 align="center">Encabezado H1</h1>
-          <p align="left" style="font-weight: bold">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            aliquid neque illo assumenda atque fugit id, maiores maxime
-            recusandae dicta vitae exercitationem, nostrum saepe laboriosam quod
-            aut unde sit nihil!
-          </p>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <h2 align="center">Encabezado H2</h2>
-          <p align="left" style="font-style: italic">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt velit
-            vero qui distinctio saepe. Modi culpa voluptatibus impedit, dolorum,
-            esse commodi itaque excepturi molestiae rerum corporis fugit
-            mollitia cupiditate sed?
-          </p>
+    <!-- NAV/ -->
+    <nav id="barra" class="navbar navbar-expand-lg bg-body-tertiary navbar-fixed-top">
+      <div class="container-fluid">
+        <img
+          src="https://lxp.eggcooperation.com/static/media/egg_no_shadow_blue.e249344e8e47483c9281e96479949ee4.svg"
+          height="20px"
+          href="#"
+          alt="logo"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#sonido">Sonido</a>
+            <a class="nav-link" href="#encabezados">Encabezados</a>
+            <a class="nav-link" href="#listas">Listas</a>
+            <a class="nav-link" href="#papasfritas">Papas</a>
+            <a class="nav-link" href="#losbeatles">Beatles</a>
+            <a class="nav-link" href="#registro">Registro</a>
+            <a class="nav-link" href="#tablas">Tablas</a>
+          </div>
         </div>
       </div>
+    </nav>
+    <!-- NAV* -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <!-- SONIDO/ -->
+          <div id="sonido" style="text-align: center" class="my-4">
+            <section
+              class="animate__animated animate__backInUp"
+              style="margin-bottom: 150px"
+            >
+              <h4>Para mi página estilo antiguo, un sonido antiguo.</h4>
+              <audio
+                src="https://www.winhistory.de/more/winstart/mp3/winxp.mp3"
+                controls
+              ></audio>
+            </section>
+          </div>
+          <!-- SONIDO* -->
+        </div>
+      </div>
+      <!-- ENCABEZADOS/ -->
+      <div id="encabezados">
+        <div class="row my-4 animate__animated animate__shakeX">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <h1 align="center">Encabezado H1</h1>
+            <p align="left" style="font-weight: bold">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio aliquid neque illo assumenda atque fugit id, maiores
+              maxime recusandae dicta vitae exercitationem, nostrum saepe
+              laboriosam quod aut unde sit nihil!
+            </p>
+          </div>
 
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <h2 align="center">Encabezado H2</h2>
+            <p align="left" style="font-style: italic">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+              velit vero qui distinctio saepe. Modi culpa voluptatibus impedit,
+              dolorum, esse commodi itaque excepturi molestiae rerum corporis
+              fugit mollitia cupiditate sed?
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ENCABEZADOS* -->
       <hr />
-
-      <div class="row my-4">
+      <!-- LISTAS/ -->
+      <div class="row my-4" id="listas">
         <div class="col-sm-12 col-md-6 col-lg-6">
           <h3>Lista ordenada(alfabetica)</h3>
           <ol type="A">
@@ -97,16 +138,17 @@
             </ul>
           </ul>
         </div>
-
+        <!-- LISTAS* -->
         <hr />
-
-        <div class="row">
+        <!-- PAPAS/ -->
+        <div class="row" id="papasfritas">
           <div class="col">
             <h3>Papas fritas(no hacer click en las papas)</h3>
             <img
               src="https://cocina-casera.com/wp-content/uploads/2023/01/patatas-fritas-crujientes-francesa-1.jpg"
               width="25%"
-              alt="papas fritas" id="papas"
+              alt="papas fritas"
+              id="papas"
             />
             <h5>Ingredientes:</h5>
             <ul>
@@ -133,13 +175,14 @@
             </ol>
           </div>
         </div>
-
+        <!-- PAPAS* -->
         <hr />
-
+        <!-- LOS BEATLES/ -->
         <div id="losbeatles" class="row align-items-center">
           <div class="col-sm-12 col-md-6 col-lg-6">
             <h2>Los Beatles</h2>
-            <img id="caminando"
+            <img
+              id="caminando"
               src="https://img2.rtve.es/i/?w=1600&i=1565264925747.jpg"
               class="img-fluid"
               alt="4 hombres caminando"
@@ -218,10 +261,11 @@
           </div>
         </div>
       </div>
+      <!-- LOS BEATLES* -->
 
       <hr />
-
-      <div class="row my-4">
+      <!-- REGISTRO/ -->
+      <div class="row my-4" id="registro">
         <div class="col-sm-12 col-md-6 col-lg-6">
           <h2>Registrar Usuario</h2>
           <form action="" method="post">
@@ -500,9 +544,10 @@
           </form>
         </div>
       </div>
-
+      <!-- REGISTRO* -->
       <hr />
-      <div class="row my-f">
+      <!-- TABLAS/ -->
+      <div class="row my-f" id="tablas">
         <div class="col-sm-12 col-md-6 col-lg-6">
           <table
             class="table table-responsive table-condensed table-bordered table-striped table-hover"
@@ -575,6 +620,19 @@
           </table>
         </div>
       </div>
+      <!-- TABLAS* -->
     </div>
+
+
+
+
+
+    <!-- SCRIPTS BOOT -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
+  <!--  -->
   </body>
 </html>
