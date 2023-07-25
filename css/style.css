@@ -64,6 +64,7 @@ body{
 #formregistro{
   border: 1px solid gray;
   border-radius: 25px;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
   padding: 20px;
 }
 #botonregistro{
@@ -72,7 +73,7 @@ body{
   color: black;
 }
 #botonregistro:hover{
-  background-color: #ffd0a2;
+  background-color: #ece9e6;
   border: 1px solid gray;
   color: black;
 }
